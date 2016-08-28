@@ -1,0 +1,65 @@
+<layout name="Layout/layout" />
+<div class="container theme-showcase" role="main">
+<div class="panel panel-default">
+  <div class="panel-heading">导航设置</div>
+  <div class="panel-body">
+  		<form class="form-horizontal" method="post">
+  		  <input type="hidden" name="id" value="<?php echo $setting['id']?>" >
+  		  <?php $temp = '';?>
+  		  <?php for($i=0;$i<10;$i++):?>
+		  <div class="form-group">
+		    <label for="inputEmail3" class="col-sm-2 control-label"><?php echo $i+1;?></label>
+		    <div class="col-sm-2">
+		      <select class="form-control" name="first[<?php echo $i;?>]">
+		      	<option value=""></option>
+		        <?php foreach($navs as $nav):?>
+			        <?php foreach($nav as $key=>$value):?>
+			        	<?php if($setting && $temp = $setting['nav'][$i] && is_array($setting['nav'][$i]) && !$temp):?>
+			        		<?php $temp = $setting['nav'][$i];?>
+			        	<?php endif;?>
+			        		<option value="<?php echo $key;?>" <?php echo ($setting && isset($setting['nav'][$i]) && $setting['nav'][$i]==$key)  || ($temp && $key==1)?'selected':'';?>><?php echo $value;?></option>
+			      	<?php endforeach;?>
+		      	<?php endforeach;?>
+		      </select>
+		    </div>
+		    <?php if($temp):?>
+		      	<div class="col-sm-4">
+			      <input type="text" class="form-control" placeholder="请填写您的自定义导航名称" required name="second[<?php echo $i;?>]" value="<?php echo key($temp);?>">
+			    </div>
+			    <div class="col-sm-4">
+			      <input type="text" class="form-control" placeholder="请填写您的自定义导航链接" required name="hird[<?php echo $i+1;?>]" value="<?php echo end($temp);?>">
+			    </div>
+		    <?php endif;$temp='';?>
+		  </div>
+		  <?php endfor;?>
+		  <div class="form-group">
+		    <div class="col-sm-offset-2 col-sm-10">
+		      <button type="submit" class="btn btn-primary">保存确定</button>
+		    </div>
+		  </div>
+		</form>
+  </div>
+</div>
+<div style="display:none;" id="block">
+    <div class="col-sm-4">
+      <input type="text" class="form-control" placeholder="请填写您的自定义导航名称" required name="second[]">
+    </div>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" placeholder="请填写您的自定义导航链接" required name="hird[]">
+    </div>
+</div>
+</div> <!-- /container -->
+<script>
+$(function (){
+	$('select').change(function (){
+		if($(this).val()==1){
+			var html = $("#block div").clone();
+			$(html).eq(0).find("input").attr('name',"second["+$('select').index($(this))+"]");
+			$(html).eq(1).find("input").attr('name',"hird["+$('select').index($(this))+"]");
+			$(this).parent().after(html);
+		}else{
+			$(this).parent().nextAll().remove();
+		}
+	});
+})
+</script>

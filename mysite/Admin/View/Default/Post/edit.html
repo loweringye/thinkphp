@@ -1,0 +1,104 @@
+<extend name="Layout/extend" />
+<block name="header">
+<import type='js' file="Js.upload" />
+<import type='js' file="Js.jquery-form" />
+<import type='js' file="Js.jquery-form" />
+<import type='js' file="Js.jquery-form" />
+<import type='js' file="Js.ueditor.ueditor-config" />
+<import type='js' file="Js.ueditor.ueditor-all" />
+</block>
+<block name="contenter">
+<div class="container theme-showcase" role="main">
+<div class="panel panel-default">
+  <div class="panel-heading">
+ 	<div class="pull-left">文章<?php echo !empty($post['id'])?'编辑':'新增';?></div>
+  	<div class="pull-left">
+  		<a href="<?php echo U('/admin/post/list')?>"><span class="glyphicon glyphicon-arrow-left pull-left" aria-hidden="true"></span><span class="pull-left">返回</span></a>
+  	</div>
+  	<div class="clearfix"></div> 
+  </div>
+  <div class="panel-body">
+		<form class="form-horizontal" method="post" action="<?php echo U('/admin/post/add','','')?>" id="save-form">
+		  <input type="hidden" name="id" value="<?php echo $post['id']?>" >
+		  <div class="form-group">
+		    <label for="inputEmail3" class="col-sm-2 control-label">标题</label>
+		    <div class="col-sm-10">
+		      <input type="text" class="form-control" placeholder="请填写您的标题" required name="name" maxlength="32" value="<?php echo $post['name']?>">
+		    </div>
+		  </div>
+		  <div class="form-group">
+			  <label for="inputEmail3" class="col-sm-2 control-label">分类</label>
+			  <div class="col-sm-10">
+				  <select class="form-control" required name="type_id">
+				  	<?php foreach($post_types as $type):?>
+				  	<option value="{$type['id']}" <?php echo $post['type_id']==$type['id']?'selected':'';?>>{$type['name']}</option>
+				  	<?php endforeach;?>
+				  </select>
+			  </div>
+		  </div>
+		  <div class="form-group">
+		    <label for="inputEmail3" class="col-sm-2 control-label">上传图片</label>
+		    <div class="col-sm-10" data-type = "image_url" class="img-add img-thumbnail" data-width="64" data-height="64" data-upload-height="100" data-upload-width="100" data-flag="true" data-input-name="image_url">
+		  		<?php if($post['image_url']):?>
+		    		<img src="{$post['image_url']}" width="64" height="64" class="img-add"/>
+		    	<?php else:?>
+		    		<i class="iconfont img-add">&#xe617;</i>
+		    	<?php endif;?>
+		    </div>
+		  </div>
+		  <div class="form-group">
+			  <label for="inputEmail3" class="col-sm-2 control-label">内容</label>
+			  <div class="col-sm-10">
+				 <textarea id="content" style="width:$('input').width();" name="content">{$post['content']}</textarea>
+			  </div>
+		  </div>
+		  <div class="form-group">
+		    <div class="col-sm-offset-2 col-sm-10">
+		      <button type="submit" class="btn btn-primary">保存确定</button>
+		    </div>
+		  </div>
+		</form>
+		<form class="form-horizontal hidden" id="img-add-form" data-curl="<?php echo U('/admin/upload/img','','')?>">
+		   <div class="col-sm-9">
+		   	<input type="hidden"  class="" value="1" name="image_file"/>
+		   	<input type="file"  id="img-add-form-file" class="pointer" name="image" />
+		   	<input type="hidden" name="image" />
+		   </div>
+		</form>
+		<div id="upload-loading" style="position: absolute;left: 0px; right: 0px;top: 0px;background: rgba(0, 0, 0, 0.5);;width: 100%;height: 100%;z-index: 9999999; display:none;">
+			<div class="upload-loading">
+			  <div class="upload-loading-container container1">
+			    <div class="circle1"></div>
+			    <div class="circle2"></div>
+			    <div class="circle3"></div>
+			    <div class="circle4"></div>
+			  </div>
+			  <div class="upload-loading-container container2">
+			    <div class="circle1"></div>
+			    <div class="circle2"></div>
+			    <div class="circle3"></div>
+			    <div class="circle4"></div>
+			  </div>
+			  <div class="upload-loading-container container3">
+			    <div class="circle1"></div>
+			    <div class="circle2"></div>
+			    <div class="circle3"></div>
+			    <div class="circle4"></div>
+			  </div>
+			</div>
+		</div>
+  		<?php if(isset($_GET['error'])):?>
+      		<div class="alert alert-danger text-center" role="alert"><?php echo $_GET['error'];?></div>
+      	<?php endif;?>
+  </div>
+</div>
+</div> <!-- /container -->
+<script>
+$(function (){
+	var ue = UE.getEditor('content');
+	$("#save-btn").click(function (){
+		$("#save-form input[type='submit']").click();
+	});
+})
+</script>
+</block>

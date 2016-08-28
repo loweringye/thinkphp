@@ -1,0 +1,23 @@
+[ 2016-07-03T15:20:22+08:00 ] 127.0.0.1 /admin/index/set.html
+ERR: 非法操作:set
+
+[ 2016-07-03T20:25:30+08:00 ] 127.0.0.1 /admin/index/set.html
+ERR: 1146:La table 'thinkphp.client' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `client`
+
+[ 2016-07-03T20:26:25+08:00 ] 127.0.0.1 /admin/index/set.html
+ERR: 1146:La table 'thinkphp.client' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `client`
+
+[ 2016-07-03T20:30:42+08:00 ] 127.0.0.1 /admin/index/set.html
+ERR: 1146:La table 'thinkphp.\_common\_model\_client_model' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `\_common\_model\_client_model`
+
+[ 2016-07-03T20:33:08+08:00 ] 127.0.0.1 /admin/index/set.html
+ERR: 1146:La table 'thinkphp.\_common\_model\_client_model' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `\_common\_model\_client_model`
+
+[ 2016-07-03T20:34:14+08:00 ] 127.0.0.1 /admin/index/set.html
+ERR: 1146:La table 'thinkphp.\_common\_model\_client_model' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `\_common\_model\_client_model`
+

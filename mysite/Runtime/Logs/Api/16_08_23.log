@@ -1,0 +1,120 @@
+[ 2016-08-23T23:30:04+08:00 ] 127.0.0.1 /api/xml
+ERR: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'root'@'@localhost' (mot de passe: OUI)
+
+[ 2016-08-23T23:30:16+08:00 ] 127.0.0.1 /api/json
+ERR: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'root'@'@localhost' (mot de passe: OUI)
+
+[ 2016-08-23T23:30:35+08:00 ] 127.0.0.1 /api/json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001135s ]
+ERR: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'root'@'@localhost' (mot de passe: OUI)
+
+[ 2016-08-23T23:41:00+08:00 ] 127.0.0.1 /api/weixin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA C:\wamp\www\thinkphp\mysite\Api\Controller\WeixinController.class.php 第 45 行.
+
+[ 2016-08-23T23:41:01+08:00 ] 127.0.0.1 /api/weixin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA C:\wamp\www\thinkphp\mysite\Api\Controller\WeixinController.class.php 第 45 行.
+
+[ 2016-08-23T23:41:01+08:00 ] 127.0.0.1 /api/weixin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA C:\wamp\www\thinkphp\mysite\Api\Controller\WeixinController.class.php 第 45 行.
+
+[ 2016-08-23T23:42:11+08:00 ] 127.0.0.1 /api/weixin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA C:\wamp\www\thinkphp\mysite\Api\Controller\WeixinController.class.php 第 45 行.
+
+[ 2016-08-23T23:52:39+08:00 ] 127.0.0.1 /api/jssdk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001167s ]
+ERR: 无法加载控制器:Jssdk
+
+[ 2016-08-23T23:53:12+08:00 ] 127.0.0.1 /api/jssdk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+ERR: 无法加载控制器:Jssdk
+
+[ 2016-08-23T23:53:22+08:00 ] 127.0.0.1 /api/jssdk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+ERR: 无法加载控制器:Jssdk
+
+[ 2016-08-23T23:53:23+08:00 ] 127.0.0.1 /api/jssdk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000869s ]
+ERR: 无法加载控制器:Jssdk
+
+[ 2016-08-23T23:53:24+08:00 ] 127.0.0.1 /api/jssdk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001465s ]
+ERR: 无法加载控制器:Jssdk
+
+[ 2016-08-23T23:53:45+08:00 ] 127.0.0.1 /api/jssdk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+ERR: 无法加载控制器:Jssdk
+
+[ 2016-08-23T23:53:52+08:00 ] 127.0.0.1 /api/jssdk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+NOTIC: [2] Missing argument 1 for APi\Controller\JSSDKController::__construct(), called in C:\wamp\www\thinkphp\ThinkPHP\Common\functions.php on line 681 and defined C:\wamp\www\thinkphp\mysite\Api\Controller\JSSDKController.class.php 第 11 行.
+NOTIC: [2] Missing argument 2 for APi\Controller\JSSDKController::__construct(), called in C:\wamp\www\thinkphp\ThinkPHP\Common\functions.php on line 681 and defined C:\wamp\www\thinkphp\mysite\Api\Controller\JSSDKController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: appId C:\wamp\www\thinkphp\mysite\Api\Controller\JSSDKController.class.php 第 12 行.
+NOTIC: [8] Undefined variable: appSecret C:\wamp\www\thinkphp\mysite\Api\Controller\JSSDKController.class.php 第 13 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001343s ]
+

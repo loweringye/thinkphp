@@ -1,0 +1,49 @@
+<extend name="Layout/extend" />
+<block name="contenter">
+<div class="container theme-showcase" role="main">
+<div class="panel panel-default">
+  <div class="panel-heading">广告管理</div>
+  <div class="panel-body">
+    	<?php if(isset($_GET['error'])):?>
+      		<div class="alert alert-danger text-center" role="alert"><?php echo $_GET['error'];?></div>
+      	<?php endif;?>
+  		<!-- Table -->
+  		<div class="table-responsive">
+			<table class="table table-hover table-bordered">
+			    <tr class="active">
+			    	<th width="50">序号</th>
+			    	<th width="200">名称</th>
+			    	<th>链接</th>
+			    	<th width="100">图片</th>
+			    	<th width="100">状态</th>
+			    	<th width="100">操作</th>
+			    </tr>
+			    <?php $index=0;foreach($adverts as $advert):?>
+			    <tr>
+			    	<td><?php echo ++$index;?></td>
+			    	<td><?php echo $advert['name'];?></td>
+			    	<td><?php echo $advert['url'];?></td>
+			    	<td><img src="<?php echo U($advert['image_url'],'','');?>" width="64" height="64"/></td>
+			    	<td><?php echo $status[$advert['status']];?></td>
+			    	<td>
+			    	<div class="dropdown">
+					  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					    操作
+					    <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					    <li><a class="open-dialog" data-toggle="modal"  data-target="#addFormModal" href="<?php echo U('/admin/advert/edit/'.$advert['id'],'','')?>">编辑</a></li>
+					    <li><a href="<?php echo U('/admin/advert/status/'.$advert['id'],'','')?>"><?php echo $advert['status']=='opened'?'关闭':'开放';?></a></li>
+					    <li><a href="<?php echo U('/admin/advert/delete/'.$advert['id'],'','')?>">删除</a></li>
+					  </ul>
+					</div>
+			    	</td>
+			    </tr>
+			    <?php endforeach;?>
+			</table>
+		</div>
+		<?php echo $page;?>
+  </div>
+</div>
+</div> <!-- /container -->
+</block>

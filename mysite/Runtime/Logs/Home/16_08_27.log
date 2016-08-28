@@ -1,0 +1,65 @@
+[ 2016-08-27T16:34:44+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001820s ]
+NOTIC: [2] file_get_contents(jsapi_ticket.php): failed to open stream: No such file or directory C:\wamp\www\thinkphp\mysite\Api\Controller\JSSDKController.class.php 第 110 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp\www\thinkphp\mysite\Api\Controller\JSSDKController.class.php 第 54 行.
+NOTIC: [2] file_get_contents(access_token.php): failed to open stream: No such file or directory C:\wamp\www\thinkphp\mysite\Api\Controller\JSSDKController.class.php 第 110 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp\www\thinkphp\mysite\Api\Controller\JSSDKController.class.php 第 76 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead C:\wamp\www\thinkphp\mysite\Api\Controller\JSSDKController.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp\www\thinkphp\mysite\Api\Controller\JSSDKController.class.php 第 81 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead C:\wamp\www\thinkphp\mysite\Api\Controller\JSSDKController.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp\www\thinkphp\mysite\Api\Controller\JSSDKController.class.php 第 60 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001233s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001442s ]
+NOTIC: [8] Undefined variable: host C:\wamp\www\thinkphp\mysite\Runtime\Cache\Home\2f1b1a5f63f38278eb6cac2811bb10d6.php 第 36 行.
+NOTIC: [8] Undefined variable: host C:\wamp\www\thinkphp\mysite\Runtime\Cache\Home\2f1b1a5f63f38278eb6cac2811bb10d6.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023704s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023913s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000930s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001583s ]
+
+[ 2016-08-27T16:34:46+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] file_get_contents(jsapi_ticket.php): failed to open stream: No such file or directory C:\wamp\www\thinkphp\mysite\Api\Controller\JSSDKController.class.php 第 110 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp\www\thinkphp\mysite\Api\Controller\JSSDKController.class.php 第 54 行.
+NOTIC: [2] file_get_contents(access_token.php): failed to open stream: No such file or directory C:\wamp\www\thinkphp\mysite\Api\Controller\JSSDKController.class.php 第 110 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp\www\thinkphp\mysite\Api\Controller\JSSDKController.class.php 第 76 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead C:\wamp\www\thinkphp\mysite\Api\Controller\JSSDKController.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp\www\thinkphp\mysite\Api\Controller\JSSDKController.class.php 第 81 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead C:\wamp\www\thinkphp\mysite\Api\Controller\JSSDKController.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp\www\thinkphp\mysite\Api\Controller\JSSDKController.class.php 第 60 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000373s ]
+NOTIC: [8] Undefined variable: host C:\wamp\www\thinkphp\mysite\Runtime\Cache\Home\2f1b1a5f63f38278eb6cac2811bb10d6.php 第 36 行.
+NOTIC: [8] Undefined variable: host C:\wamp\www\thinkphp\mysite\Runtime\Cache\Home\2f1b1a5f63f38278eb6cac2811bb10d6.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013582s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013871s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000746s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001047s ]
+
+[ 2016-08-27T16:35:54+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+

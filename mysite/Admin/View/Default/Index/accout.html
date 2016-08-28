@@ -1,0 +1,36 @@
+<layout name="Layout/layout" />
+<div class="container theme-showcase" role="main">
+<div class="panel panel-default">
+  <div class="panel-heading">账号密码</div>
+  <div class="panel-body">
+  		<form class="form-horizontal" method="post">
+		  <div class="form-group">
+		    <label for="inputEmail3" class="col-sm-2 control-label">网站账号</label>
+		    <div class="col-sm-10">
+		      	<input type="text" class="form-control" value="{$host['code']}" disabled>
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label for="inputEmail3" class="col-sm-2 control-label">新的密码</label>
+		    <div class="col-sm-10">
+		      <input type="password" class="form-control" placeholder="请填写您的新的密码" required name="password">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label for="inputEmail3" class="col-sm-2 control-label">确认密码</label>
+		    <div class="col-sm-10">
+		      <input type="password" class="form-control" placeholder="请填写您的新的确认密码" required name="re_password">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <div class="col-sm-offset-2 col-sm-10">
+		      <button type="submit" class="btn btn-primary">保存修改</button>
+		    </div>
+		  </div>
+		</form>
+		<?php if($error):?>
+      		<div class="alert alert-danger text-center" role="alert"><?php echo $error;?></div>
+      	<?php endif;?>
+  </div>
+</div>
+</div> <!-- /container -->

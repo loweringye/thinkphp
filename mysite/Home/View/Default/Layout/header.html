@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+    <title>Loweringye-与你分享web知识</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="<?php echo get_static_url('Css/css.css');?>" />
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <import type='js' file="Js.common" />
+    <import type='js' file="Js.jquery-scrollUp-min" />
+    <import type='css' file="Css.iconfont.iconfont" />
+    <import type='css' file="Css.common" />
+    <import type='css' file="Css.swiper-min" />
+	<import type='js' file="Js.swiper-min" />
+</head>
+
+<body role="document">
+<div id="top">
+	<div class="container">
+		<div class="row row-top">
+			<div class="col-xs-12 col-sm-8 logo">
+				<?php if($host['logo_url']):?>
+					<img src="{$host['logo_url']}" />
+				<?php else:?>
+					<img src="/Public/Image/logo.png" />
+				<?php endif;?>
+			</div>
+			<div class="col-xs-12 col-sm-4 hidden-xs contact">
+				<?php if($host['contact_url']):?>
+					<img src="{$host['contact_url']}" />
+				<?php else:?>
+					<div class="pull-left"><i class="contact-icon icon iconfont">&#xe663;</i></div>
+					<div class="pull-left">
+						<img src="/Public/Image/contact.png" />
+					</div>
+					<div class="clearfix"></div>
+				<?php endif;?>
+			</div>
+			<!-- Usage as a class -->
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<nav class="navbar navbar-inverse">
+     <div class="container">
+       <div class="row">
+	       <div class="navbar-header">
+	         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	           <span class="sr-only">Toggle navigation</span>
+	           <span class="icon-bar"></span>
+	           <span class="icon-bar"></span>
+	           <span class="icon-bar"></span>
+	         </button>
+	         <a class="navbar-brand visible-xs" href="#">我的网站</a>
+	       </div>
+	       <div id="navbar" class="collapse navbar-collapse">
+	         <ul class="nav navbar-nav">
+	           <li class="active"><a href="#">首页</a></li>
+	           <li><a href="#about">公司简介</a></li>
+	           <li><a href="#contact">公司文化</a></li>
+	           <li><a href="#contact">公司团队</a></li>
+	           <li><a href="#contact">公司历史</a></li>
+	           <li><a href="#contact">注册流程</a></li>
+	           <li><a href="#contact">行业资讯</a></li>
+	           <li><a href="#contact">关于我们</a></li>
+	         </ul>
+	       </div><!-- /.nav-collapse -->
+       </div>
+     </div><!-- /.container -->
+</nav>
+<script type="text/javascript">
+$(function (){
+    $.scrollUp({
+        animation: 'fade',
+        activeOverlay: '#00FFFF',
+        scrollImg: {
+            active: true,
+            type: 'background',
+        },
+    	activeOverlay: false,
+    });
+})
+</script>
